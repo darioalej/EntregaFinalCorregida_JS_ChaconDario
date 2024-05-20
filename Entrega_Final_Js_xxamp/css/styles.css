@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+html, body {
+    background-color:#e69900;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+body.logged-in {
+    overflow: auto; /* Restauro con esto el desplazamiento normal */
+}
+
+.container {
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Baloo Thambi", cursive;
+    font-weight: 600;
+    font-size: 4rem;
+    border: none;
+}
+
+.container > span {
+    padding-right: 0.5rem;
+    animation: glow 2s ease-in-out infinite;
+}
+
+.container > span:nth-child(10),
+.container > span:nth-child(11),
+.container > span:nth-child(13),
+.container > span:nth-child(18) {
+    padding-right: 2rem;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #e69900;
+        text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.container > span:nth-child(1) {
+    animation-delay: 0.25s;
+}
+.container > span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.container > span:nth-child(3) {
+    animation-delay: 0.75s;
+}
+.container > span:nth-child(4) {
+    animation-delay: 1s;
+}
+.container > span:nth-child(5) {
+    animation-delay: 1.25s;
+}
+.container > span:nth-child(6) {
+    animation-delay: 1.5s;
+}
+.container > span:nth-child(7) {
+    animation-delay: 1.75s;
+}
+.container > span:nth-child(8) {
+    animation-delay: 2s;
+}
+.container > span:nth-child(9) {
+    animation-delay: 2.25s;
+}
+.container > span:nth-child(10) {
+    animation-delay: 2.5s;
+}
+.container > span:nth-child(11) {
+    animation-delay: 2.75s;
+}
+.container > span:nth-child(12) {
+    animation-delay: 3s;
+}
+.container > span:nth-child(13) {
+    animation-delay: 3.25s;
+}
+.container > span:nth-child(14) {
+    animation-delay: 3.5s;
+}
+.container > span:nth-child(15) {
+    animation-delay: 3.75s;
+}
+.container > span:nth-child(16) {
+    animation-delay: 4s;
+}
+.container > span:nth-child(17) {
+    animation-delay: 4.25s;
+}
+.container > span:nth-child(18) {
+    animation-delay: 4.5s;
+}
+
+h2 {
+    margin-top: 2.5vh;
+    color: black;
+}
+
+form {
+    margin-top: 2.5vh;
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    color: #ffdd99;
+    font-size: 20px;
+}
+
+label {
+    margin-top: 1vh
+}
+
+input {
+    padding: 1.5%;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+
+input[type='submit'] {
+    background-color: #9999ff;
+    color: #ffdd99;
+    font-size: 25px;
+    border: solid black 2px;
+    margin-top: 5vh;
+    transition: 0.5s background-color;
+}
+
+input[type='submit']:hover {
+    background-color: #0000ff;
+    cursor: pointer;
+}
+
+input, div {
+    font-size: 2em;
+    padding: 4px 12px;
+    border-radius: 7px;
+    border: 2px solid darkgray;
+    outline: none;
+}
+
+#juegos {
+    margin-top: 40px;
+    display: none;
+    height: 500px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.4fr auto;
+    grid-gap: 10px;
+}
+
+.saludo_juego {
+    background-color: yellow;
+    grid-column: 1/3;
+}
+
+.juego-hijo {
+    grid-column: auto;
+    background-color: salmon;
+    align-self: center;
+}
+
+.juego-link {
+    text-decoration: none;
+    border-width: 0;
+}
+
+.juego-description {
+    margin-top: 150px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.juego-card {
+    display: flex; 
+    position: relative;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 10px; 
+    border: 2px solid darkgray;
+    border-radius: 10px; 
+    width: 300px; 
+}
+
+.juego-card:hover {
+    background-color: aqua;
+    transition: background-color 0.3s ease;
+}
+
+.juego-card img {
+    margin-bottom: 150px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#mensaje-bienvenida {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid darkgray;
+    margin-top: 20px; 
+    display: none;
+}
+
+#boton-mostrar-juegos {
+    background-color: #9999ff;
+    display: none; 
+    color: #ffdd99;
+    font-size: 20px;
+    border: solid black 2px;
+    margin-top: 5vh;
+    transition: 0.5s background-color;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#boton-mostrar-juegos:hover {
+    background-color: #0000ff; 
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.titulo_instruccion {
+    color:  #ffdd99;  
+}
+
+.instruccion {
+    color: white;
+}
+
+img {
+    position: absolute; 
+    bottom: 0;
+    width: 100 px;  
+    height: 100 px;  
+}
+
+a {
+    font-size: 30px;
+}
+
+.registro{
+    font-size: 24px;
+    border: none;
+    padding:15px;
+}
+
+.registro a{
+    text-decoration: none;
+    font-size: 26px;
+
+} 
+
+.registro a:hover{
+    font-size:30px;
+    cursor: pointer;
+}
+
+.recordar{
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+}
+
+.recordar a{
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.recordar a:hover {
+    font-size:30px;
+    cursor: pointer;
+}
+
+/* CSS para juego.js */
+.juego_mente {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-family: sans-serif;
+    color: white
+}
+
+main {
+    width: 730px; 
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.section1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.juego_boton {
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.section2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px; 
+    padding: 0 20px;
+}
+
+.estadisticas {
+    border: 1px solid white;
+    height: 105px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+.btn-menu{
+    background-color: salmon;
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.btn-menu:hover{
+    cursor: pointer;
+    background-color: aqua;
+    font-size: 25px;
+    transition: background-color 0.3s ease; /* Agrego una transición suave cuando pasamos el mouse */
+}

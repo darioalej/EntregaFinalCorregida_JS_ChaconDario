@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+html, body {
+    background-color: #e69900;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+body.logged-in {
+    overflow: auto; /* Restauro con esto el desplazamiento normal */
+}
+
+
+.black {
+    background-color: black;
+}
+
+.titulo_instruccion {
+    color:  #ffdd99; 
+    font-size: 24px; 
+}
+
+.instruccion {
+    color: white;
+    font-size: 22px;
+}
+
+.nave img {
+    position: absolute; /* Para que la nave esté en el suelo, con el bottom 0 posicionamos abajo la imagen */
+    bottom: 0;
+    width: 100px; 
+    height: 100px;  
+}
+
+a {
+    font-size: 30px;
+}
+
+.btn-nave{
+    background-color: salmon;
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.btn-nave:hover{
+    cursor: pointer;
+    background-color: aqua;
+    font-size: 25px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+
+.obstaculo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.obstaculo img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%); /* Cambiar el fondo de la imagen al color contrario, en este caso la imagen tiene fondo blanco, lo paso a negro*/
+}
+
+.objeto {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para el temporizador y contador */
+.temporizador, .contador {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contador {
+    top: 50px; /* para que quede debajo del temporizador */
+}

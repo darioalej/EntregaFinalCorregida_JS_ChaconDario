@@ -1,0 +1,54 @@
+
+
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "usuario": "juanito123",
+    "contraseña": "clave123",
+    "email": "juanito@example.com"
+  },
+  {
+    "nombre": "María",
+    "apellido": "González",
+    "usuario": "mariag",
+    "contraseña": "abc123",
+    "email": "maria.g@example.com"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "López",
+    "usuario": "carlitos22",
+    "contraseña": "password",
+    "email": "clopez@example.com"
+  },
+  {
+    "nombre": "Laura",
+    "apellido": "Martínez",
+    "usuario": "lauram",
+    "contraseña": "qwerty",
+    "email": "laura.m@example.com"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Díaz",
+    "usuario": "pedrod",
+    "contraseña": "secret",
+    "email": "pdiaz@example.com"
+	},
+	{
+	"nombre": "Dario",
+	"apellido": "Chacon",
+	"usuario": "dac2912",
+	"contraseña": "perrito",
+	"email": "darioale@hotmail.com"
+	},
+	{
+	"nombre": "Mario",
+    "apellido": "Bross",
+    "usuario": "SuperMario",
+    "contraseña":"KoopaTropa23",
+    "email": "cupatropa@hotmail.com"
+	}
+]
+

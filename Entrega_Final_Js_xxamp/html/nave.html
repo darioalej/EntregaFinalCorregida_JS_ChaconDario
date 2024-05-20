@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles_nave.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Que despegue la naveeeeeee</title>
+</head>
+<body class="black">
+    <div class="titulo_instruccion">Instrucciones del juego </div>
+    <div class="instruccion">Tienes 120 segundos para recoger lo máximo que puedas las pelotitas amarillas con la nave</div>
+    <div class="instruccion">Diriges la nave con las flechas del teclado</div>
+    <div class="instruccion">Si te toca alguna de las bombas pierdes el juego</div>
+    <div class="instruccion">Empiezas el juego apretando la barra espaciadora, también sirve para pausar el juego</div>
+    <div class="temporizador" id="temporizador">Tiempo: 120</div>
+    <div class="contador" id="contador">Objetos recogidos: 0</div>
+    <div id="mensaje-final" class="mensaje-final"></div>
+    <div class="nave">
+        <img id="nave" src="../img/nave1.png" alt="nave en base">
+    </div>
+   <!-- obstáculos en el HTML -->
+	<div id="obstaculo1" class="obstaculo">
+    	<img src="../img/bomba2.jpg" alt="Obstáculo">
+	</div>
+	<div id="obstaculo2" class="obstaculo">
+    	<img src="../img/bomba2.jpg" alt="Obstáculo">
+	</div>
+	<div id="obstaculo3" class="obstaculo">
+   	 	<img src="../img/bomba2.jpg" alt="Obstáculo">
+	</div>
+	<div id="obstaculo4" class="obstaculo">
+    	<img src="../img/bomba2.jpg" alt="Obstáculo">
+	</div>
+
+    <!-- objetos coleccionables en el HTML -->
+    <div class="objeto" id="objeto1"></div>
+    <div class="objeto" id="objeto2"></div>
+    
+    <!-- ir al juego de la nave -->
+    <a href="juego.html" style="position: fixed; bottom: 20px; right: 20px;">
+        <button class="btn-nave">Ir al Juego de rompecocos</button>
+    </a>
+    <!-- ir al menú de logueo -->
+    <a href="../index.html" style="position: fixed; bottom: 20px; left: 20px;">
+        <button class="btn-nave">Ir al Menú Principal</button>
+    </a>
+
+    
+    <script src="../js/nave.js"></script>
+</body>
+</html>

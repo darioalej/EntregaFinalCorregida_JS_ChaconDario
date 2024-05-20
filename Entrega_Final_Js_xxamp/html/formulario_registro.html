@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Formulario Registro</title>
+</head>
+<body class="body-registro">
+
+    <div class="container-form">
+        <div class="form-content">
+            <h1 id="title"> Registro </h1>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-field" id="nameInput">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="input-field" id="lastNameInput">
+                             <i class="fa-solid fa-user"></i>
+                            <input type="text" id="lastName" placeholder="Apellido">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa fa-user-circle"></i>
+                            <input type="text" id="username" placeholder="Usuario">
+                        </div>
+                        <div class="input-field" id="passwordInput">
+                             <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="Contraseña">
+                             <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-field" id="repeatPasswordInput">
+                             <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="repeatPassword" placeholder="Repetir Contraseña">
+                             <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-field" id="emailInput">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="btn-field">
+                        <button id="signUp" type="button"> Registrarme </button>
+                        <button id="signIn" type="button" class="disable"> Loguearme </button>
+                    </div>
+                </form>
+         </div>
+    </div>
+
+    <a href="../index.html" style="position: fixed; bottom: 20px; right: 20px;"> <button>Ir al menú principal</button> </a>
+
+    <script src="../js/registro.js"></script>
+</body>
+</html>
